@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500&display=swap');
+
+:root{
+    /* Colores */
+    --bg-color:  #11243c;
+    --color-azul1:#0d4d73;
+    --color-azul2:#0986b4;
+    --color-azul3:#03cbfa;
+    --color-azul4:#0ffff8;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --color-gris: #333;
+    --color-gris_claro: rgb(111, 107, 107);
+
+    /* Colores segundo tema*/
+    --bg-colorae:  #393463;
+    --color-rosi1:#753f7f;
+    --color-rosi2:#c25499;
+    --color-rosi3:#ff7cb7;
+    --color-rosi4:#ffb0ce;
+
+    /* Fuente */
+   --font-principal:'Anek Malayalam', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--color-blanco);
+    font-family: var(--font-principal);
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__title{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.header span{
+    color: #03cbfa;
+}
+
+.estilo{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* Calculadora */
+.div__container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: var(--color-blanco);
+    border: 3px solid var(--color-azul4);
+    border-radius: 1rem;
+}
+
+.c_display{
+    width: 98%;
+    background-color: var(--color-gris);
+    height: 200px;
+    margin: 5px auto;
+    border-radius: 1rem;
+    text-align: right;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: solid 3px var(--color-azul1);
+    overflow-x: auto;
+}
+
+.c_teclado{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.c-numeros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: .7rem;
+}
+
+.c-boton{
+    width: 22%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.piecalcu{
+    color: var(--color-negro);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Columna dos espacios */
+.col-2{
+    width: 47%;
+}
+
+/* ColoresCalcu */
+.color-r{
+    background-color: #c34b4b;
+    border: solid 1px #000;
+}
+
+.color-r:hover{
+    background-color: #c21111;
+}
+
+.color-v{
+    background-color: #4bc357;
+    border: solid 1px #000;
+}
+
+.color-v:hover{
+    background-color: #066b10;
+}
